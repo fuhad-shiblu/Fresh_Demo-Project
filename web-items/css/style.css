@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/*Common CSS Part Start*/
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+:root{
+    --Poppins: "Poppins", sans-serif;
+    --FRL: "Frank Ruhl Libre", serif;
+    --Podkova: "Podkova", serif;
+}
+/*Common CSS Part End*/
+
+/*Menubar CSS Part Start*/
+.menubarAll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 52px;
+}
+.menubarAll img{
+    width: 133px;
+    height: 72px;
+}
+.menu ul{
+    display: flex;
+    gap: 59px;
+}
+.menu ul li a{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    transition: all linear .1s;
+    position: relative;
+}
+.menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #FDBB57;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+.menu ul li a:hover{
+    color: #FDBB57;
+}
+.btn{
+    display: flex;
+    gap: 10px;
+}
+.btn a{
+    width: 120px;
+    height: 56px;
+    background: #FDBB57;
+    display: inline-block;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #000000;
+    border: 1px solid #FDBB57;
+    transition: all linear .5s;
+}
+.btn a:hover{
+    color: #FDBB57;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    box-shadow: 0px 0px 21px 8px rgba(0,0,0,0.75);
+}
+.btn a:focus{
+    color: #FDBB57;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    box-shadow: 0px 0px 21px 8px rgba(0,0,0,0.75);
+}
+/*Menubar CSS Part End*/
+
+/*Fashion Style CSS Part Start*/
+#fashionStyleMain{
+    margin-top: 112px;
+}
+.fashionStyleAll{
+    display: flex;
+    justify-content: space-between;
+}
+.fashionStyleText h1{
+    width: 432px;
+    height: 263px;
+    color: #000000;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+}
+.fashionStyleText p{
+    width: 502px;
+    height: 128px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    margin-top: 38px;
+    margin-bottom: 76px;
+}
+.fashionStyleText a{
+    width: 318px;
+    height: 85px;
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    line-height: 85px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    border-radius: 10px;
+    border: 1px solid #000000;
+    transition: all linear .5s;
+}
+.fashionStyleText a:hover{
+    color: #000000;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 40px 16px rgba(64,48,184,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 50px;
+}
+.fashionStyleImg{
+    width: 535px;
+    height: 643px;
+    overflow: hidden;
+}
+.fashionStyleImg img{
+    border-bottom-left-radius: 195px;
+    transform: scale(1);
+    transition: all linear .1s;
+}
+.fashionStyleImg img:hover{
+    transform: scale(1.5);
+}
+/*Fashion Style CSS Part End*/
+
+/*New Collection CSS Part Start*/
+#newCollectionMain{
+    margin-top: 100px;
+}
+.newCollectionText h2{
+    text-align: center;
+    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--FRL);
+}
+.newCollectionText p{
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    margin-top: 37px;
+    margin-bottom: 46px;
+}
+.newCollectionImg{
+    display: flex;
+    justify-content: space-between;
+}
+.nci{
+    width: 349px;
+    height: 402px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.nci a{
+    width: 315px;
+    height: 57px;
+    text-align: center;
+    background: #ffffff;
+    display: inline-block;
+    line-height: 57px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    transition: all linear .1s;
+}
+.nci a:hover{
+    box-shadow: 0px 0px 40px 16px rgba(64,48,184,1);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.nci1{
+    background: url(../img/collection_1.png);
+}
+.nci1 a{
+    position: absolute;
+    bottom: 44px;
+    left: -100%;
+    transform: translateX(-50%);
+}
+.nci1:hover a{
+    left: 50%;
+}
+.nci2{
+    background: url(../img/collection_2.png);
+}
+.nci2 a{
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nci2:hover a{
+    bottom: 44px;
+}
+.nci3{
+    background: url(../img/collection_3.png);
+}
+.nci3 a{
+    position: absolute;
+    bottom: 44px;
+    left: 150%;
+    transform: translateX(-50%);
+}
+.nci3:hover a{
+    left: 50%;
+}
+/*New Collection CSS Part End*/
+
+/*Best Fashion CSS Part Start*/
+.bestFashionBox{
+    width: 100%;
+    height: 942px;
+    position: relative;
+}
+.bfit{
+    display: flex;
+}
+.bestFashionImg{
+    margin-top: 93px;
+    z-index: 2;
+}
+.bestFashionText{
+    margin-top: 212px;
+}
+.bestFashionText h2{
+    width: 376px;
+    height: 162px;
+    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--FRL);
+}
+.bestFashionText p{
+    width: 414px;
+    height: 186px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    margin-top: 63px;
+    margin-bottom: 132px;
+}
+.counter{
+    width: 793px;
+    background: #FEECC8;
+    position: absolute;
+    top: 750px;
+    left: 41%;
+    z-index: 1;
+    border-radius: 20px;
+}
+.counter .c1{
+    text-align: center;
+}
+.counter .c2{
+    text-align: center;
+}
+.counter .c3{
+    text-align: center;
+}
+.counter .c1 h2{
+    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--Podkova);
+    margin-bottom: 28px;
+}
+.counter .c2 h2{
+    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--Podkova);
+    margin-bottom: 28px;
+}
+.counter .c3 h2{
+    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--Podkova);
+    margin-bottom: 28px;
+}
+.counter .c1 p{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+}
+.counter .c2 p{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+}
+.counter .c3 p{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+}
+.counterAll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 27px;
+    padding: 75px 75px;
+}
+.counter .line{
+    width: 1px;
+    height: 143px;
+    background: #000000;
+}
+/*Best Fashion CSS Part End*/
+
+/*Best Seller Footer CSS Part Start*/
+#bestSellerMain{
+    background: #CFA485;
+    margin-top: 200px;
+}
+.bestSellerAll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bestSellerText{
+    margin-top: 35px;
+}
+.bestSellerText h2{
+    width: 315px;
+    height: 162px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--FRL);
+    color: #ffffff;
+}
+.bestSellerText p{
+    width: 437px;
+    height: 245px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--FRL);
+    color: #ffffff;
+    margin-top: 43px;
+    margin-bottom: 65px;
+}
+.bestSellerText a{
+    width: 319px;
+    height: 86px;
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    line-height: 86px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    border-radius: 10px;
+    margin-bottom: 192px;
+}
+.bestSellerText a:hover{
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    box-shadow: 0px 0px 40px 16px rgba(64,48,184,1);
+}
+.bestSellerImg{
+    width: 366px;
+    height: 551px;
+    background: #ffffff;
+}
+.bestSellerImg .stars ul{
+    display: flex;
+    gap: 8px;
+    color: #FFAF37;
+    margin-top: 14px;
+    margin-left: 22px;
+}
+.bestSellerImg h2{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #000000;
+    margin-left: 22px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+.bestSellerImg .pricing{
+    display: flex;
+    gap: 31px;
+}
+.bestSellerImg .pricing p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    font-family: var(--Poppins);
+    margin-left: 22px;
+}
+.pricingOpacity{
+    color: #C4C4C4 !important;
+}
+/*Best Seller Footer CSS Part End*/
